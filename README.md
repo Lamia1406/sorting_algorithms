@@ -5,3 +5,4 @@ This repository contains various sorting algorithms implemented in C. In this re
 ## Algorithms Included
 
 - **Bubble Sort**
+- **Selection Sort**
