@@ -16,10 +16,10 @@ void counting_sort(int *array, size_t size)
 	for (i = 1; i < size; i++)
 		if (array[i] > max)
 			max = array[i];
-	count_array = calloc(max + 1, sizeof(int));
+	count_array = malloc((max + 1) * sizeof(int));
 	if (count_array == NULL)
 		return;
-	output_array = calloc(size, sizeof(int));
+	output_array = malloc(size * sizeof(int));
 	if (output_array == NULL)
 	{
 		free(count_array);
